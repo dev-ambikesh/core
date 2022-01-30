@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pass by value and pass by reference</title>
+</head>
+<script>
+
+  //  This is example of pass By value
+  let a = 2;
+  let b = a;
+  // Passing and changing values. 
+  b = b + 4;
+  console.log(a); // 2
+  console.log(b); // 6
+
+  // Pass By reference. 
+
+  const ambi_data = {
+    'name' : 'ambikesh',
+    'lastn' : 'Gautam'
+  };
+  const obj = ambi_data;
+  obj.lastn = 'Bharti';
+
+  console.log(ambi_data);
+  console.log(obj);
+
+  // let say if i want to change only second object value then how would i do that just see below. 
+  const arr = [1,2,3,4,5];
+  // concat method only copy the array into new array not holding the reference of the arr. 
+  const arr2 = [].concat(arr);
+  // Now pushing 6 in arr2 not in arr. 
+  arr2.push(6);
+  console.log(arr);
+  console.log(arr2);
+
+ /**
+  * An other Example for changing value of an object with pass by reference. 
+  * 
+  * */
+
+  let rank = 999;
+  const result = {
+    'Name' : 'SR',
+    'marks' : 88
+  }
+
+  const Kgmu = ( rn, rt ) => {
+    rn = 1000;
+    rt.marks = 200;
+  }
+
+  Kgmu( rank, result );
+  console.log(result.marks); // 200
+  console.log(rank); // 999
+</script>
+<body>
+  
+</body>
+</html>

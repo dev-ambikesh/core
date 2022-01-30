@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IIFE</title>
+</head>
+<script>
+  /**
+   * 
+   * What is IIFE in javascript. 
+   * IIFE stands for immediatly invoked function expression. 
+   * An IIFE function runs as soon as it's defined.
+   * 
+   * It's a design pattern which is also known as Self-Excecuting Anonymous function and contains two major paramters. 
+   * 1 - Grouping operator
+   * 2 - Immediatly invoked function expression. 
+   * 
+   * 
+   * */
+
+  function AuthorName(){
+    console.log('The author name is ambikesh');
+  }
+  AuthorName();
+
+  (function(){
+    console.log('Something is not going good');
+  })();
+  
+</script>
+<body>
+  
+</body>
+</html>

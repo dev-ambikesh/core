@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rest Params</title>
+</head>
+<script>
+  // Noraml way to handle params 
+  function add(a,b,c,d,e,f,g,h,i){
+    console.log(a+b+c+d+e+f+g+h+i);
+  }
+  add(1,2,3,4,5,6,7,8,9);
+
+  // Now this is quite hactic to hanlde this by writing so many time review params.
+  // Now in ES6
+
+// ...inputs will be an array in function
+  function add( ...inputs ){
+    // console.log(...inputs );
+    total = 0;
+    for(i of inputs){
+      total += i;
+    }
+    console.log(total);
+  }
+  add(1,92,0,34,4);
+
+  // Now try the same thing with other params. 
+
+  function addSomething(a, b, ...c ){
+    console.log(`${a} ${b}`);
+    console.log(c);
+    console.log(c[0]);
+    console.log(c.length);
+    console.log(c.indexOf('ambikesh'));
+  }
+
+  addSomething('India', 'USA', 'peter', 'John', 'ambikesh');
+
+</script>
+<body>
+  <h1>Rest Params</h1>
+  <b><p>Rest Params is improved way to handle function params , allowing more easily handle various input params as function , the rest params syntax allow  us to represent an indefinite number of arguments as an array </p></b>
+</body>
+</html>

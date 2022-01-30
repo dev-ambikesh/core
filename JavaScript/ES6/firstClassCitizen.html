@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions Types</title>
+</head>
+<script>
+  const MessageFunctoin = () =>{
+    console.log('Show some message.........');
+  }
+  // MessageFunctoin();
+
+  // Call object function. 
+
+  const TestObject = {
+    'name' : 'Ambikes tesging',
+    Quanlification : function () {
+      console.log(' I have qualified B.tech and something');
+    }
+  }
+
+  // TestObject.Quanlification();
+  
+  // Pass a function as an arguments in ES6
+
+  const MyName = () => {
+    return 'Ambikesh Gautam';
+  }
+  
+  const ShowRequest = (name,Message ) =>{
+    console.log( name() + Message );
+  }
+  ShowRequest( MyName, ' you so stupid that you are here but any way belien man');
+
+  // Returning a function as return params
+  
+  const a = () => {
+    return b = () => {
+      console.log('Here you are at the beginner ');
+    }
+  }
+  // Calling second child function. 
+  a()();
+
+</script>
+<body>
+  
+</body>
+</html>

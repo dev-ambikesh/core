@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clear property</title>
+</head>
+<style>
+.container{
+  border: 2px solid blue;
+  width: auto;
+  min-height: 700px;
+
+}
+.div1{
+  width: 50%;
+  border: 2px solid green;
+  float: left;
+}
+.div2{
+  width: 49%;
+  border: 2px solid red;
+  float: right;
+}
+.footer{
+  width: 99%;
+  text-align: center;
+  border: 3px solid green;
+  height: 50px;
+  margin-top: 10px;
+  float: left;
+  clear: both;
+}
+</style>
+<body>
+  <h1>
+    Clear Property : clear:left , clear:right and clear:both these are the most important property for move the footer when parent div content get over and it's more over to overlap the footer
+  </h1>
+  <div class="container">
+    <div class="div1">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias expedita esse atque delectus molestiae laborum reprehenderit tempora deserunt! Commodi tempore minima placeat laudantium consequuntur natus itaque esse a expedita voluptatem?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolorem eaque ea quos eum ullam repellat, in soluta doloribus qui dignissimos, excepturi debitis tempora laborum delectus nulla, laudantium illum vitae.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus fuga deserunt quod repellat vitae atque eos porro sapiente facilis, neque in? Officiis nemo rem ratione sequi ipsum animi nesciunt ullam.
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. At rerum, nisi eligendi eius repudiandae veritatis asperiores natus reprehenderit ex, accusantium, unde facere eveniet dolore maxime. Consequatur placeat veritatis officia porro.[]
+    </div>
+    <div class="div2">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto voluptatibus similique quo, debitis neque sed perspiciatis quidem esse nihil excepturi assumenda, pariatur dicta ipsum soluta adipisci sint expedita. Asperiores, blanditiis.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perferendis assumenda officia, ducimus voluptates adipisci. Officiis, laborum tempore! Fugiat dolor cum magni ad error quis inventore veniam nam sapiente! Veniam!
+    </div>
+    <div class="footer">
+      <h1>This is footer</h1>
+    </div>
+  </div>
+</body>
+</html>

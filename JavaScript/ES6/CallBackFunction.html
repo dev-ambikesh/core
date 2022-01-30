@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CallBackFunction</title>
+</head>
+<script>
+  /**
+   * What is callback function :---------------
+   * ---------------Answer-----------------------------------------------------------------
+   * Any function that is passes as argument in other function is called Callback function.
+   *  -------------------------------------------------------------------------------------
+   * A callback function is that function that is to be executed after another function has finished --hence the name is called callback function. 
+   * */
+
+   const firstFunction = () => {
+     // SetTimeout function is about to give a specific time interval to it's execution after 6 second (3000) mili second. 
+     setTimeout(function(){
+       console.log(`Welcome to hell First`);
+     }, 3000 );
+   }
+
+   const SecondFunction = () => {
+     console.log('Welcome to hell Second');
+   }
+   // First function will execute first but will show output later.
+   firstFunction();
+   // Second function will execute last but it will show the out earlier. 
+   SecondFunction();
+
+   /**
+    * Since javescript is event driven programming language . this means that instead of waiting for a repnse before moving on. 
+    *  CallBack are a way to make sure certain code doesn't execute until other code has already finished execution. 
+    * 
+    * */
+
+   const Callhim = ( freind, MessageOther ) =>{
+      console.log( `HI there ${freind} It's really nice to see you there, I'm hopping you're doing great ......${MessageOther()}`);
+   }
+   const ReplyMessage = () => {
+     return 'Im good dear what about you bro';
+   }
+   Callhim('Shashikant' , ReplyMessage );
+</script>
+<body>
+  
+</body>
+</html>

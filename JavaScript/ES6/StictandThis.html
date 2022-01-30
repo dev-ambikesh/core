@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Use Strict</title>
+</head>
+<script>
+  "use strict"
+  // This is the contant which use to show the all type of error lexically, or during compilation of the code.  
+  
+  // This keyword in javascript 
+  /**
+  * 1 Alone this refers to a global object. 
+  * 2 In a regular function, this refers to a global object
+  * 3 In a method this refers to owner object.
+  * 4 In a function in stict mode, this is undefined.
+  *
+  *
+  *
+  */
+
+  const ambikesh = {
+    'name' : 'Ambikesh kumar Gautam', 
+    'age' : 21, 
+    'fname' : 'Ram Bhajan Prasad', 
+    sum : function(){
+      var add = 3+4;
+      console.log('The some of two number is ' + add );
+      console.log(this.name);
+      console.log(this.fname);
+      console.log(this);
+    }
+  }
+  console.log(ambikesh.sum());
+</script>
+<body>
+  
+</body>
+</html>

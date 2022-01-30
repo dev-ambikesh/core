@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeyWord excersice</title>
+</head>
+<script>
+  // 1 Alone this is refers to a global object. 
+  // 2 In regular function, this refers to a global object. 
+  // 3 In method , this refers to a parent ( Owner ) object. 
+  // 4 In function, in strict mode, this is undefine. 
+
+  const Ambikesh = {
+    'fname' : 'Ambikesh', 
+    'sname' : 'kumar', 
+    'lname' : 'Gautam', 
+    sum : function (){
+      var add = 3.0+3+3;
+      console.log('Add 3 Number : ' + add );
+      // Here this refers to the owner object.
+      console.log(this);
+      console.log('My First Name is : ' + this.fname );
+      console.log('My Second Name is : ' + this.sname );
+      console.log('My Last Name is : ' + this.lname );
+
+      // Since this is regular function so here "this" keyword will refers to a global object not to owner object. 
+      function child(){
+        var fname = 'Suraj';
+        console.log('Child Name : ' + fname );
+        console.log(this);
+      }
+      // Calling child function. 
+      child();
+
+    }
+  };
+  Ambikesh.sum();
+</script>
+<body>
+  
+</body>
+</html>

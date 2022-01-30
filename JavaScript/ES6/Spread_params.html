@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spread params</title>
+</head>
+<script>
+//ES5
+// function add(a,b,c){
+//   console.log(a+b+c);
+// }
+// add(1,3,4);
+// let's try with array value to add three integer from an array. 
+// const arrValue = [1,2,3];
+// add.apply(null, arrValue );
+// Now do the same thing in ES6
+function add(a,b,c){
+  console.log(a+b+c);
+}
+// add(1,3,4);
+// let's try with array value to add three integer from an array. 
+const arrValue = [1,2,3];
+// Replace apply method in advance javascript. 
+add(...arrValue );
+// add.apply(null, arrValue );
+
+// Replace the concat methods. 
+let arr1 = [1,2,3];
+let arr2 = [4,5,6];
+//es5
+// arr1 = arr1.concat(arr2);
+// console.log(arr1);
+// Now ES6
+arr1 = [...arr1,...arr2 ];
+// If you want to add more value in array then you can do the same in this way. 
+
+arr1 = [...arr1, ...arr2, 2,3,4,5,5,6,6];
+</script>
+<body>
+  <h1>Spead Operator</h1>
+  <b><p>Spread Operator allow an intrable to expand in place where 0+ arguments  are expected . it is mostly in variable array where is more that 1 values are expected. it allows us the privilege to obtain a list of params from an array. Syntax of spread operator is same , "Reset Params", but it woks completly opposite of it</p></b>
+  
+</body>
+</html>

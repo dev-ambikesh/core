@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Asynchronous JavaScript </title>
+</head>
+<body>
+  <script>
+
+    const function2 = () => {
+      setTimeout(()=>{
+        console.log('function two is calling');
+      }, 3000 )
+      
+    }
+
+    const function1 = () => {
+      console.log('function one is starting ');
+      function2();
+      console.log('function one is ending');
+    }
+
+    function1();
+    // Here this function is not dependent on the first or last, it will execute last because of timeout function.
+    function2();
+
+  </script>
+</body>
+</html>

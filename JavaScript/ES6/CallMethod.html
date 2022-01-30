@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CallMethod</title>
+</head>
+<script>
+  /**
+   * Call method in javaScript call() can use object of an other function. 
+   * Let's say if you want to use one function can use object of any other function then you can go ahead with this function. 
+   * 
+   * Call Method are using with "call()" style. 
+   * 
+   * */
+
+  const InterveiewMe = {
+    name : 'Ambikesh', 
+    lastN : 'Gautam', 
+    feature: function(marks , commn){
+      console.log(`No hard to urderstand JavaScript ${this.name} , ${this.lastN} and you obtained marks are ${marks} and your communication marks is ${comm}`);
+    }
+  } 
+
+  const InterviewYou = {
+    name : 'Ambikesh2', 
+    lastN : 'Bharti'
+  }
+
+  // Here in this line i'm calling feature method with these three params InterviewYou object and 10 30 marks.
+  InterveiewMe.feature.call(InterviewYou, 10, 30 );
+  // IN apply method the basic difference is this you can pass argument in array that's it. 
+  InterviewYou.feature.apply(InterviewYou, [10 , 30 ]);
+</script>
+<body>
+  
+</body>
+</html>

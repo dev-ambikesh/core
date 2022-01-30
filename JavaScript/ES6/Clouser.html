@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  /**
+   * What is clouser in JavaScript
+   * Ans :- Clouser is an action that is inner function can have access to the outer functions variable as well as the global variables.
+   * 
+   * A clouse is a combination of a function and the lexical environment within which that function was declared. 
+   * 
+   * [ The return function does not execute the inner function -- function is executed only when followed by () , but rather the return statement of entire body of the function ]
+   * */
+   const outerFunction = (a) => {
+    let b = 10;
+    const innerFunction = () => {
+      let sum = a + b;
+      console.log(`The output of the function is :- ${sum}`);
+    }
+    return innerFunction;
+    // innerFunction();
+   }
+
+  //  outerFunction(22);
+  let inn = outerFunction(2);
+  console.dir(inn);
+  inn();
+
+</script>
+<body>
+  
+</body>
+</html>

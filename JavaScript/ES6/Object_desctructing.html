@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Desctructing</title>
+</head>
+<script>
+    const E_Data = {
+      'order_id': 1323232,
+      'customer_name' : 'Ambikesh',
+      'm_number' : 23832323232,
+      'hobb' : {
+        'f_h' : 'Playing Badmintion',
+        's_h' : 'go to Gym'
+      }
+    }
+    // Simple way to get value from an objecct
+    console.log(`My order id ${E_Data.order_id} and my Name is ${E_Data.customer_name} and mobile number is ${E_Data.m_number}`);
+
+    //Let's make some desctuctive object, 
+    let { order_id, customer_name, m_number } = E_Data;
+    // Now here every variable holds a value conrresponding to the keys.
+
+    console.log(`My order id ${order_id} and my Name is ${E_Data.customer_name} and mobile number is ${m_number}`);
+
+    // let say if you want to rename you variable as they're in the object then you shoud go like this below. 
+    // ({ key_name1: rename1, key_name2: rename2..... and so on } = object #variable );
+
+    ({ order_id:ord_id, customer_name : c_name , m_number:number } = E_Data);
+    console.log(`My order id ${ord_id} and my Name is ${c_name} and mobile number is ${number}`);
+
+
+    // Now trying same thing with multiple object and trying to get the value of next child object. 
+
+    ({ order_id:ord_id, customer_name : c_name , m_number:number, hobb } = E_Data);
+    console.log(`My order id ${ord_id} and my Name is ${c_name} and mobile number is ${number} and I love to go ${hobb.s_h}`);
+
+</script>
+<body>
+  
+</body>
+</html>

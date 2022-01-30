@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Higher Order function</title>
+
+</head>
+<script>
+  /**
+   what is higher order function
+
+   A higher order function is function which returns a function as it's params type and also take argument as funcction. 
+   **/
+   const interviewQuestions = (name) => {
+     if( name === 'Ambikesh'){
+      return function (topic){
+        console.log(`Hi ${name} What is ${topic} ? please explain me.`);
+      }
+    }if( name === 'kumar'){
+      return function (topic){
+        console.log(`Hi ${name} What is ${topic} ? please explain me.`);
+      }
+    }if( name === 'Gautam'){
+      return function (topic){
+        console.log(`Hi ${name} What is ${topic} ? please explain me.`);
+      }
+    }if( name === 'Shashikant'){
+      return function (topic){
+        console.log(`Hi ${name} What is ${topic} ? please explain me.`);
+      }
+    }else{
+      return function(){
+        console.log('Welcome to tiptoporder');
+      }
+    }
+   }
+
+   interviewQuestions('Ambikesh')('Data Structure');
+   interviewQuestions('Kumar')('Algorithm');
+   interviewQuestions('Gautam')('React');
+   interviewQuestions('Shashikant')('Data base and its flows');
+
+   const way2 = interviewQuestions('Ambikesh');
+   way2('UI');
+   way2('UX');
+   way2('React');
+   way2('Basics');
+   way2('Normal');
+
+</script>
+<body>
+  
+</body>
+</html>

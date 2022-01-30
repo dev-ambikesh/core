@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Types</title>
+</head>
+<script>
+  /**
+   *  All type of Data Types in JavaScript
+   *  Mainly 2 Types of Data Type are :----
+   * ====================================
+   *  1 )- Primitive 
+   *  2 )- Non primitive
+   * =======================
+   *  PRIMITIVE DATA TYPE
+   * =======================
+   * 
+   * 1 > Number 
+   * 2 > String 
+   * 3 > Boolean
+   * 4 > NUll
+   * 5 > Undefined
+   * 6 > Symbol
+   *  There are measure 6 types of DataType present in the JavaScript others type of Data Types comes under the Object. 
+   * 
+   *  // There is a question arise what is difference between Undefined and Null
+   * 
+   *  Undefine :- Which variables doesn't have value assign. 
+   *  Null :- Variable is having a null value atleast. 
+   * 
+   *  Example :- 
+   *   
+   *      Undefined                       Null
+   *    const u;                       const u = null; or u = '';
+   *  Here is not value to             Here is null value to the u variable. 
+   *  the u variable. 
+   * 
+   * ==========================
+   *  NON-PRIMITIVE
+   * ==========================
+   *  1 > Object type Data is there only which is non-primitive.
+   * 
+   * */
+
+  let a = 1;
+  let b = "Ambikesh";
+  let c = '';
+  let d;
+  console.log(typeof(a)); // Number
+  console.log(typeof(b)); // String
+  console.log(typeof(c)); // Null
+  console.log(typeof(c)); // Undefined
+
+  /**
+   *
+   * Let see some example of object type Data Types.  
+   * 
+   * */
+  const titop = {
+    'about' : 'best services', 
+    'fields' : 'Not yet'
+  };
+  titop.ceo = 'shashikant';
+
+  console.log(titop.ceo);
+  console.log(typeof({ })); // Object
+  console.log(typeof([ ])); // Array
+  console.log( typeof( function (){} )); // function
+
+  const am_check = () => {
+    console.log('Checking Ambikesh......');
+  }
+
+  /**
+   * Here are you can se function is behaving like an object so everything is almost object in javascript.
+   * */
+  am_check.stringTest = 'Ambikesh you are still so far';
+ console.log(am_check.stringTest);
+  // am_check();
+
+
+</script>
+<body>
+  
+</body>
+</html>

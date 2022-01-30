@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scope Chains</title>
+</head>
+<script>
+  var name = 'Ambikesh0';
+  first();
+  function first(){
+    var a = 'A variable value';
+    second();
+    function second(){
+      b = 'B variable values';
+      console.log(name + a + b );
+    }
+  }
+</script>
+<body>
+  <h1>Scope Chain Of Variables and functions</h1>
+  <p>
+    The scop chain is use to resolve the value of variable name in JavaScript. 
+    Scope Chain in JavaScript is "Lexically defind", which means we can see that what the scop chain will be by looking at the code. 
+    At the Scope chain is global Scope, which is window object in browser. 
+    Lexical Scopping :- a function that is laxically within a function get access to the scop of other function. ( Inner function can get their parent function Variables, but the vice versa is not true ).
+  </p>
+</body>
+</html>

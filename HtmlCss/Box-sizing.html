@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box sizing</title>
+
+</head>
+<style>
+  #box{
+    /*
+    box-sizing : border-box won't let the increase the width of the box if it is box-sizing: border-box. 
+    box-sizing : content-box it means this will allow to increase the size of width when apply padding on it.
+    */
+    width: 500px;
+    border: 10px solid black;
+    padding: 150px;
+    box-sizing: border-box;
+  }
+</style>
+<body>
+  <h1>Box Sizing</h1>
+  <p>
+    Box-sizing : border-box is feature to stop the width of container while giving padding to the container.<br>
+    Box-sizing : content-box is feature to allow the width of container while giving padding to the container.
+
+  </p>
+  <div id="box">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vitae officiis quam voluptas similique nulla dolor eligendi, pariatur aliquid? Enim repellendus vitae assumenda quo odit sunt. Quas nihil tempora quod?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, provident et? Tempora vel hic nobis fugiat quasi fuga, nemo consequatur itaque cumque doloribus ducimus assumenda dolor maiores, culpa libero error![]
+  </div>
+  
+</body>
+</html>
