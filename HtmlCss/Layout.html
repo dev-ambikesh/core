@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background: slategray;
+    }
+    #wrapper{
+      border:1px solid black;
+      width: 1000px;
+      background: white;
+      margin: 0 auto;
+    }
+
+    #header{
+      background: crimson;
+      color: white;
+    }
+
+    #header h1{
+     padding: 30px 0 0 20px;
+    }
+    #menu{
+      background: lightsalmon;
+    }
+    #menu li{
+      display: inline-block;
+    }
+    #menu ul{
+      margin: 0%;
+      padding: 0%;
+    }
+    #menu li a{
+      display: block;
+      padding: 10px 13px;
+      text-decoration: none;
+      color: black;
+    }
+    #menu li a:hover{
+      background: violet;
+      color: white;
+    }
+
+    #content{
+      width: 800px;
+      float: left;
+      min-height: 500px;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    #sidebar{
+      background: lightsalmon;
+      float: right;
+      min-height: 500px;
+    }
+    #sidebar a{
+      text-decoration: none;
+      color: black;
+    }
+    #footer{
+      background: lightsalmon;
+      padding: 5px 10px;
+      text-align: right;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <h1>Welcome to TipTopOrder.com</h1>
+    </div>
+    <div id="menu">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Gallery</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <h2>Desing Basic Layout</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptates veniam, nesciunt, magni voluptas itaque adipisci ipsam quibusdam suscipit in et corrupti illum inventore, reprehenderit at fugiat modi dolor quod.</p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga ullam, error soluta autem amet veniam maxime vero omnis numquam voluptatum, iusto quam cum itaque magni asperiores facilis alias aliquam dolores.
+      </p>
+    </div>
+    <div id="sidebar">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Gallery</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+    <div id="footer">
+      TipTopOrder@2022copyright
+    </div>
+
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,103 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+body{
+  background-color: #fff;
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  /*This is like previouse one*/
+  font: normal Arial, Helvetica, sans-serif;
+  line-height:1.6em;
+  margin: 0%;
+}
+.container{
+  margin: auto;
+  width: 500px;
+}
+.box-1{
+  background-color: #666;
+  color: #fff;
+  font-family: tahoma;
+  font-weight: 800;
+  font-style: italic;
+  text-decoration: uppercase;
+  letter-spacing: 0.2em;
+  word-spacing: 1em;
+  border-right: 5px solid red ;
+  border-top: 5px solid red ;
+  border-left: 5px solid red ;
+  border-bottom: 5px solid red;
+  /*Same as above*/
+  border: 5px solid red;
+  border-width: 3px;
+  border-bottom-width: 5px;
+  border-top-style: dotted;
+
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  /*same thing above*/
+  padding: 20px;
+  margin-top: 30px;
+  margin: 20px 0;
+}
+
+.box-2{
+  border: 3px dotted #ccc;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.categories{
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 15px;
+}
+.categories h2{
+  text-align: center;
+}
+
+.categories ul{
+  padding-left: 20px;
+  list-style: square;
+  list-style: none;
+}
+
+.categories li{
+  padding-bottom: 8px;
+  border-bottom: dotted 1px #333;
+  list-style-image: url( ..);
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: red;
+}
+
+a:active{
+  color: green;
+}
+a:visited{
+  color: black;
+}
+.my-form{
+  padding: 20px;
+}
+.form-group{
+  padding-bottom: 15px;
+}
+.my-form label{
+  display: block;
+}
+.my-form input[type="text"]{
+  padding: 8px;
+  width: 100%;
+}
