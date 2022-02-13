@@ -1,0 +1,8 @@
+What is Class.
+Class is an blue print which has functions and variable , variables are called as "property" and functions are called as "Methods".
+
+You can say class is new data Type which has new variable and functions , we can create variable with Data Type  and variable are called as instances.
+
+Class is kind of Template. 
+Blue print of the car -> instances can be any colour car , many model car.
+

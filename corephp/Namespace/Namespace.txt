@@ -1,0 +1,79 @@
+<?php
+
+/**
+ * What is "NameSpace"
+ * 
+ * Php Namespaces provide a way in which to group related classes , interfaces, functions and contants. Namespace are a way of encapsulating  items.
+ * 
+ * A namespace is like a folder or directory.
+ * 
+ * In the PHP world, namespaces are designed to solve two problems that authors of libraries and applications encounter when creating re-usable code elements such as classes or functions.
+ * 
+ * Name collision between code you create, and internal PHP classes/functions/contanst or third-party classes/functions/constants.
+ * 
+ * *********************
+ *   WHY USE NAMESPACE
+ * *********************
+ * 
+ * You can create two or more class with same name  in single file.
+ * 
+ * you can create two or more class with same name in single file.
+ * 
+ * You can create two or more constant with same name in single file.
+ * 
+ * You can avoid Name conflicts while using Third Party Libraries / Framework.
+ * 
+ * You can seprate Codes.
+ * 
+ * 
+ * 
+ * ===================================================
+ *      NAMESPACE NAMING RULES 
+ * ===================================================
+ * 
+ * namespace keyword is used to declare Namespaces in PHP
+ * 
+ * .Namespace must nne the first statement of the file before any other code . with once exception declare keyword.
+ * 
+ * 
+ * <?php
+ * 
+ * // Right way
+ *  declare(encoding = 'UTF=8' );
+ *  namespace Product 
+ *  const NUM = 10;
+ * 
+ * 
+ *  // Wrong Way
+ *  <html>
+ * </html>
+ * 
+ *  declare(encoding = 'UTF=8' );
+ *  namespace Product 
+ *  const NUM = 10;
+ * 
+ * Classes (including abstracts and traits) , interfaces, functions , and contants can be contained within a namespace, only these type of code are affected by namespace.
+ * 
+ * Namespace names are case-insensitive
+ * 
+ * Namespace (even nested or sub-namespaces) cannot be just a number , it must start with a letter 
+ * Ex :- namespace 12 or namesapce Product/12
+ * 
+ * Not possible to mix bracketed namesapce declarations with unbracketed namespace declarations. 
+ * 
+ * Example :-
+ * 
+ * Laptop.php
+ * <?php
+ * 
+ * declare (encoding = 'UTF');
+ * 
+ * namespace Product;
+ * 
+ * 
+ * 
+ */
+
+
+
+?>
