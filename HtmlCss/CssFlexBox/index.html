@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Box</title>
+</head>
+<style>
+    @media(min-width:768px){
+        .container-1{
+             display: flex;
+            /* align-items: flex-start;
+            align-items: flex-end;
+            align-items: center; */
+            /* flex-direction: column; */
+            flex-direction: row;
+        }
+
+        .container-2{
+            display: flex;
+            /* justify-content: flex-start; it will push the element at start */
+            /* justify-content: flex-end; it will push all the divs at end */
+            /* justify-content: center; */
+            /* justify-content: space-between; margin in between content*/
+            /* justify-content: space-around It will put the space arround content; */
+        }
+    }
+    .container-1{
+        display: flex;
+        /* align-items: flex-start;
+        align-items: flex-end;
+        align-items: center; */
+        /* flex-direction: column; */
+        flex-direction: row;
+    }
+
+    
+    .container-1 div, .container-2 .container-2-box{
+        border: 1px #ccc solid;
+        padding: 10px;
+    }
+    .container-2{
+        display: flex;
+          /* justify-content: flex-start; it will push the element at start */
+        /* justify-content: flex-end; it will push all the divs at end */
+        /* justify-content: center; */
+        /* justify-content: space-between; margin in between content*/
+        /* justify-content: space-around It will put the space arround content; */
+    }
+    .box-1{
+        flex:2;
+        order: 2;
+    }
+    .box-2{
+        flex:1;
+        order: 1;
+    }
+    .box-3{
+        flex:1;
+        order: 3;
+    }
+    .container-2-box{
+        width: 27%;
+    }
+</style>
+<body>
+    <h1>FLEX PROPERTIES</h1>
+    <ul>
+        <li>display:flex | inline-felx :- whichi allow to display the container as flex </li>
+        <li>flex-direction : row | column :- We can assign div to vertically or horizontally.</li>
+        <li>flax-wrap: wrap :nowrap | wrapreverse :-</l>
+        <li>flex-basis:<length> it's a simple width for flex(container)</li>
+        <li>justify-content:flex-start | flex-end | center :- Alignment for flex box </li>
+        <li>align-self: flex-start|flex-end|center :- align-self hide the over data in the div</li>
+        <li>align-items:flex-start|flex-end|center :- to manage the items inside the flex</li>
+        <li>align-content: flex-start|flex-end|center : to mange the content</li>
+        <li>flex-grow<number> :-  Different sizes for the container</li>
+        <li>flex-shrink: <number></li>
+        <li>flex:<integer></li>
+        <li>order:<integer></li>
+    </ul>
+
+    <div class="container-1">
+        <div class="box-1">
+            <h3>Box One</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eum, nemo possimus officiis repudiandae pariatur repellat a animi veniam obcaecati dolorum omnis eveniet, repellendus delectus quod sit. Ea, ad beatae!</p>
+        </div>
+        <div class="box-2">
+            <h3>Box Two</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eum, nemo possimus officiis repudiandae pariatur repellat a animi veniam obcaecati dolorum omnis eveniet, repellendus delectus quod sit. Ea, ad beatae!</p>
+        </div>
+        <div class="box-3">
+            <h3>Box Three</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eum, nemo possimus officiis repudiandae pariatur repellat a animi veniam obcaecati dolorum omnis eveniet, repellendus delectus quod sit. Ea, ad beatae!</p>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="container-2-box">
+            <h3>Box Four</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eum, nemo possimus officiis repudiandae pariatur repellat a animi veniam obcaecati dolorum omnis eveniet, repellendus delectus quod sit. Ea, ad beatae!</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box Fiive</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eum, nemo possimus officiis repudiandae pariatur repellat a animi veniam obcaecati dolorum omnis eveniet, repellendus delectus quod sit. Ea, ad beatae!</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box Six</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eum, nemo possimus officiis repudiandae pariatur repellat a animi veniam obcaecati dolorum omnis eveniet, repellendus delectus quod sit. Ea, ad beatae!</p>
+        </div>
+    </div>
+    
+</body>
+</html>
